@@ -1,1 +1,1 @@
-https://pf4pad.github.io/rsschool-cv/cv
+https://pf4pad.github.io/rsschool-cv/
