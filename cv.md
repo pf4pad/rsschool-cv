@@ -20,3 +20,14 @@ Periodically, there is also a need to change the logic of the mechanisms.
 I participated in the project of putting into operation a system of pulverized coal injection into a blast furnace in order to save natural gas. The system was designed and implemented by company "Danieli Corus". I worked as part of an international development team (Netherlands, Italy, Canada). I participated in setting up software localization.
 
 I am interested in Web development. And I want to develop myself in this direction.
+
+### Skills and Proficiency:
+
+- HTML
+- CSS
+- JS
+- GULP
+- SASS
+- Bootstrap
+- GIT
+- Figma
