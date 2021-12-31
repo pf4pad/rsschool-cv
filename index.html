@@ -124,10 +124,9 @@
           <textarea id="textExample">
  animate({duration: 1000, timing(timeFraction) {
 return timeFraction;},
-
-  draw(progress) {elem.style.width = progress * 100 + '%';}
-});
-          </textarea>
+draw(progress) {elem.style.width = progress * 100 + '%';}
+ });
+       </textarea>
 
           <button onclick="animateText(textExample)">Click me</button>
         </section>
@@ -144,9 +143,9 @@ return timeFraction;},
       </a>
     </footer>
   </div>
-
-  <script src="./autotext.js"></script>
-  <script src="./main.js"></script>
+  <script src="https://js.cx/libs/animate.js"></script>
+  <script src="./js/autotext.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
