@@ -80,13 +80,13 @@ header img {
   border-radius: 5px;
 }
 
-main .contacts h3 {
+.contacts .title-disc {
   margin-top: 0;
   margin-bottom: 0;
   transform: translate(0, -50%);
 }
 
-main li {
+.main li {
   margin-bottom: 10px;
 }
 
@@ -104,7 +104,9 @@ main li {
   color: var(--dark-color);
 }
 
-main :not(.contacts) ul {
+.skills-list,
+.languages-list
+ {
   list-style-type: disc;
   margin-left: 50px;
 }
@@ -132,42 +134,28 @@ main :not(.contacts) ul {
 .about-myself p:last-of-type {
   margin-bottom: 0;
 }
-
+.cv-info{
+ color: var(--blue-color);
+}
 .cv-title {
-  flex: 1;
-  vertical-align: middle;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--blue-color);
+  
   border-bottom: 2px solid var(--blue-color);
 }
-
-.cv-info h4 {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--blue-color);
-
-}
-
 
 .cv-info img {
   vertical-align: middle;
   margin-right: 15px;
 }
 
-.cv-info p,
-.heading-desc {
-  color: var(--blue-color);
-}
-
 .education p {
   margin-left: 45px;
 }
 
-.education p strong {
-  font-weight: 700;
+.education-subtitle {
+  font-weight: 600;
 }
 
 .courses ul {
