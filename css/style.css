@@ -1,6 +1,6 @@
 :root {
   --dark-color: #2b2b2b;
-  --ligth-gray-color: #01236d;
+  --blue-color: #01236d;
   --light-green-color: #aee99d;
   --grey-color: #585858;
 }
@@ -99,7 +99,6 @@ main li {
 }
 
 .contacts a {
-  text-decoration: none;
   color: var(--dark-color);
 }
 
@@ -138,15 +137,15 @@ main :not(.contacts) ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ligth-gray-color);
-  border-bottom: 2px solid var(--ligth-gray-color);
+  color: var(--blue-color);
+  border-bottom: 2px solid var(--blue-color);
 }
 
 .cv-info h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--ligth-gray-color);
+  color: var(--blue-color);
 
 }
 
@@ -158,7 +157,7 @@ main :not(.contacts) ul {
 
 .cv-info p,
 .heading-desc {
-  color: var(--ligth-gray-color);
+  color: var(--blue-color);
 }
 
 .education p {
@@ -177,7 +176,7 @@ main :not(.contacts) ul {
 
 .courses li {
   margin-bottom: 10px;
-  color: var(--ligth-gray-color);
+  color: var(--blue-color);
 }
 
 .cv-info img.score-img {
@@ -206,12 +205,12 @@ textarea {
 button {
   display: flex;
   background-color: inherit;
-  color: var(--ligth-gray-color);
+  color: var(--blue-color);
   padding: 10px 20px;
   margin: 20px auto;
   font-size: inherit;
   border-radius: 10px;
-  border: 1px solid var(--ligth-gray-color);
+  border: 1px solid var(--blue-color);
   animation: rotate 2s infinite;
   cursor: pointer;
   outline: none;
