@@ -1,38 +1,39 @@
 :root {
-  --dark-gray-color: #222222;
+  --dark-color: #2b2b2b;
   --ligth-gray-color: #01236d;
   --light-green-color: #aee99d;
+  --grey-color: #585858;
 }
 
 body {
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
   background-color: #f5f5f5;
   overflow-x: hidden;
 }
 
 .container {
   margin: 20px auto;
-  max-width: 1024px;
-  font-family: "Cabin", sans-serif;
+  max-width: 1200px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   background-color: #ffffff;
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
   overflow-x: hidden;
 }
 
-.two-columns {
+.cv-inner {
   display: flex;
 }
 
-.left-column {
-  width: 42%;
-  color: var(--dark-gray-color);
+.cv-aside {
+  width: 35%;
+  color: var(--dark-color);
   background-color: var(--light-green-color);
 }
 
-.right-column {
-  width: 100%;
+.cv-info {
+  width: 65%;
   padding: 25px;
 }
 
@@ -48,7 +49,7 @@ header img {
   border-radius: 50%;
 }
 
-header h1 {
+.title {
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 700;
@@ -57,16 +58,16 @@ header h1 {
   letter-spacing: 7px;
 }
 
-header h2 {
+.subtitle {
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
-main {
+.main {
   padding: 0 40px;
 }
 
-main h3 {
+.title-disc {
   width: 136px;
   margin: 40px auto 20px;
   padding: 5px 20px;
@@ -74,7 +75,7 @@ main h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
-  background-color: var(--dark-gray-color);
+  background-color: var(--grey-color);
 }
 
 main .contacts h3 {
@@ -99,7 +100,7 @@ main li {
 
 .contacts a {
   text-decoration: none;
-  color: var(--dark-gray-color);
+  color: var(--dark-color);
 }
 
 main :not(.contacts) ul {
@@ -112,13 +113,13 @@ main :not(.contacts) ul {
   text-transform: uppercase;
 }
 
-.right-column .sub-header {
+.cv-info .sub-header {
   display: flex;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.right-column .about-myself .sub-header {
+.cv-info .about-myself .sub-header {
   margin-top: 0;
 }
 
@@ -131,7 +132,7 @@ main :not(.contacts) ul {
   margin-bottom: 0;
 }
 
-.right-column h3 {
+.cv-info h3 {
   flex: 1;
   vertical-align: middle;
   font-weight: 700;
@@ -141,7 +142,7 @@ main :not(.contacts) ul {
   border-bottom: 2px solid var(--ligth-gray-color);
 }
 
-.right-column h4 {
+.cv-info h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -150,12 +151,12 @@ main :not(.contacts) ul {
 }
 
 
-.right-column img {
+.cv-info img {
   vertical-align: middle;
   margin-right: 15px;
 }
 
-.right-column p,
+.cv-info p,
 .heading-desc {
   color: var(--ligth-gray-color);
 }
@@ -179,7 +180,7 @@ main :not(.contacts) ul {
   color: var(--ligth-gray-color);
 }
 
-.right-column img.score-img {
+.cv-info img.score-img {
   display: block;
   margin: 0 auto;
 }
@@ -237,7 +238,7 @@ footer {
   padding: 20px;
   font-size: 0.8rem;
   color: #ffffff;
-  background-color: var(--dark-gray-color);
+  background-color: var(--dark-color);
 }
 
 footer a {
@@ -262,15 +263,15 @@ footer .github-icon {
     padding: 0 10px;
   }
 
-  .two-columns {
+  .cv-inner {
     flex-direction: column;
   }
 
-  .left-column {
+  .cv-aside {
     width: 100%;
   }
 
-  .right-column {
+  .cv-info {
 
     width: 100%;
     padding: 0;
@@ -283,7 +284,7 @@ footer .github-icon {
     flex-wrap: wrap;
   }
 
-  .right-column h3 {
+  .cv-info h3 {
     flex: none;
 
   }
@@ -308,7 +309,7 @@ footer .github-icon {
 
   }
 
-  .right-column {
+  .cv-info {
     padding: 0;
   }
 

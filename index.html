@@ -5,21 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>CV</title>
-  <link rel="stylesheet" href="./style.css">
 
 <body>
   <div class="container">
-    <div class="two-columns">
-      <div class="left-column">
+    <div class="cv-inner">
+      <div class="cv-aside">
         <header>
-          <img src="./images/Avatar.png" alt="Portrait" width="204" height="204">
-          <h1 class="animate__animated animate__repeat-2">Pavlo Cherevach</h1>
-          <h2 class="animate__animated animate__bounce">Junior Frontend Developer</h2>
+          <img src="./images/Avatar.png" alt="Avatar" width="200" height="200">
+          <h1 class="title">Pavel Cherevach</h1>
+          <h2 class="subtitle">Frontend Developer</h2>
         </header>
-        <main>
+        <main class="main">
           <section class="contacts">
-            <h3>Contacts</h3>
+            <h3 class="title-disc">Contacts</h3>
             <ul>
               <li>
                 <img src="./images/phone.svg" alt="Phone Icon" width="30" height="30">
@@ -41,7 +46,7 @@
             </ul>
           </section>
           <section class="skills">
-            <h3>Skills</h3>
+            <h3 class="title-disc">Skills</h3>
             <ul>
               <li>HTML5, CSS3</li>
               <li>JavaScript Basics</li>
@@ -52,7 +57,7 @@
             </ul>
           </section>
           <section class="languages">
-            <h3>Languages</h3>
+            <h3 class="title-disc">Languages</h3>
             <ul>
               <li>
                 <p class="language-name">English</p>
@@ -70,7 +75,7 @@
           </section>
         </main>
       </div>
-      <aside class="right-column">
+      <aside class="cv-info">
         <section class="about-myself">
           <div class="sub-header">
             <img src="./images/user.svg" alt="About Myself Icon" width="30" height="30">
@@ -88,12 +93,10 @@
           <p>I participated in the project of putting into operation a system of pulverized coal injection into a blast
             furnace in order to save natural gas. The system was designed and implemented by Danieli Corus. I worked as
             part of an international development team (Netherlands, Italy, Canada). I participated in setting up
-            software localization. At the moment in my current position I do not see any growth and development of
-            myself as a specialist.
+            software localization. But at the moment I want to develop as Frontend Developer.
           </p>
-          <p>I am interested in Web development. And I want to develop myself in this direction. I train HTML, CSS, JS
-            on my own. I
-            am familiar with technologies GULP, SASS, Bootstrap, GIT, SVG, Figma.</p>
+          <p>I am interested in Web development. I train HTML, CSS, JS
+            on my own. I am familiar with technologies GULP, SASS, Bootstrap, GIT, SVG, Figma.</p>
         </section>
         <section class="education">
           <div class="sub-header">
@@ -122,10 +125,10 @@
             <h3>Code example</h3>
           </div>
           <textarea id="textExample">
- animate({duration: 1000, timing(timeFraction) {
-return timeFraction;},
-draw(progress) {elem.style.width = progress * 100 + '%';}
- });
+         animate({duration: 1000, timing(timeFraction) {
+          return timeFraction;},
+        draw(progress) {elem.style.width = progress * 100 + '%';}
+          });
        </textarea>
 
           <button onclick="animateText(textExample)">Click me</button>
