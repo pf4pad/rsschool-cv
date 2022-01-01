@@ -3,6 +3,7 @@
   --blue-color: #01236d;
   --light-green-color: #aee99d;
   --grey-color: #585858;
+  --white-color: #ffffff;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   max-width: 1200px;
   font-size: 18px;
   line-height: 2;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
   overflow-x: hidden;
 }
@@ -27,20 +28,20 @@ body {
 }
 
 .cv-aside {
-  width: 35%;
+  width: 30%;
   color: var(--dark-color);
   background-color: var(--light-green-color);
 }
 
 .cv-info {
-  width: 65%;
+  width: 70%;
   padding: 25px;
 }
 
 header {
   padding: 30px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 header img {
@@ -53,9 +54,9 @@ header img {
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
 }
 
 .subtitle {
@@ -74,8 +75,9 @@ header img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--grey-color);
+  border-radius: 5px;
 }
 
 main .contacts h3 {
@@ -131,7 +133,7 @@ main :not(.contacts) ul {
   margin-bottom: 0;
 }
 
-.cv-info h3 {
+.cv-title {
   flex: 1;
   vertical-align: middle;
   font-weight: 700;
@@ -207,7 +209,7 @@ button {
   background-color: inherit;
   color: var(--blue-color);
   padding: 10px 20px;
-  margin: 20px auto;
+  margin: 60px auto;
   font-size: inherit;
   border-radius: 10px;
   border: 1px solid var(--blue-color);
@@ -230,26 +232,26 @@ button {
   }
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   font-size: 0.8rem;
-  color: #ffffff;
-  background-color: var(--dark-color);
+  color: var(--white-color);
+  background-color: var(--grey-color);
 }
 
-footer a {
-  text-decoration: none;
-  color: #ffffff;
+.footer a {
+  color: var(--white-color);
 }
 
-footer .github-icon {
-  margin-right: 10px;
+.icon {
+  margin: 0 20px;
 }
 
-.my-github {
+.github-link,
+.rsschool-link {
   display: flex;
   align-items: center;
 }
