@@ -2,6 +2,8 @@
 
 ## Junior Frontend Developer
 
+---
+
 ### Contact information:
 
 **Phone:** _+38 067 8414251_
@@ -9,6 +11,8 @@
 **E-mail:** *pf4pad@gmail.com*
 
 **Telegram:** _@PageStudio_
+
+---
 
 ### Briefly About Myself:
 
@@ -21,6 +25,8 @@ I participated in the project of putting into operation a system of pulverized c
 
 I am interested in Web development. And I want to develop myself in this direction.
 
+---
+
 ### Skills and Proficiency:
 
 - HTML
@@ -31,3 +37,42 @@ I am interested in Web development. And I want to develop myself in this directi
 - Bootstrap
 - GIT
 - Figma
+
+---
+
+### Languages:
+
+1. English
+   _Pre-intermediate_
+
+2. Russian
+   _Native_
+
+3. Ukrainian
+   _Native_
+
+### Code example:
+
+Given a string S. You have to return another string such that even-indexed and odd-indexed characters of S are grouped and groups are space-separated (see sample below)
+
+```
+function sortMyString(S) {
+let arr1 = []
+let arr2 = []
+
+for (let i = 0; i < S.length; i++) {
+if (i % 2 === 0) {
+arr1[i] = S[i]
+} else { arr2[i] = S[i] }
+}
+
+return arr1.join('') + ' ' + arr2.join('')
+}
+```
+
+### Courses:
+
+1. JavaScript Manual on learnjavascript.ru (in progress)
+2. RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+
+3. JavaScript Основы on code.mu (in progress)
