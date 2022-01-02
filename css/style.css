@@ -20,7 +20,6 @@ body {
   line-height: 2;
   background-color: var(--white-color);
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
-  overflow-x: hidden;
 }
 
 .cv-inner {
@@ -96,11 +95,6 @@ header img {
   margin-right: 15px;
 }
 
-.contacts li p {
-  display: inline;
-  vertical-align: middle;
-}
-
 .contacts a {
   color: var(--dark-color);
 }
@@ -108,7 +102,6 @@ header img {
 .skills-list,
 .languages-list
  {
-  list-style-type: disc;
   margin-left: 50px;
 }
 
@@ -124,18 +117,11 @@ header img {
   margin-bottom: 15px;
 }
 
-.cv-info .about-myself .sub-header {
-  margin-top: 0;
-}
 
 .about-myself p {
   margin-bottom: 10px;
-  padding-left: 45px;
 }
 
-.about-myself p:last-of-type {
-  margin-bottom: 0;
-}
 .cv-info{
  color: var(--blue-color);
 }
@@ -143,41 +129,30 @@ header img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  
   border-bottom: 2px solid var(--blue-color);
 }
 
 .cv-info img {
-  vertical-align: middle;
   margin-right: 15px;
 }
-
+.about-myself p,
+.code-example p,
 .education p {
-  margin-left: 45px;
+    margin-left: 45px;
 }
+
 
 .education-subtitle {
   font-weight: 600;
 }
 
 .courses ul {
-  list-style-type: disc;
   margin-left: 45px;
   margin-bottom: 30px;
 }
 
-.courses li {
+.courses ul li {
   margin-bottom: 10px;
-  color: var(--blue-color);
-}
-
-.cv-info img.score-img {
-  display: block;
-  margin: 0 auto;
-}
-
-.code-example p {
-  margin-left: 45px;
 }
 
 textarea {
@@ -262,7 +237,6 @@ button {
   }
 
   .cv-info {
-
     width: 100%;
     padding: 0;
     margin: 15px 0px 0px 0px;
@@ -276,7 +250,6 @@ button {
 
   .cv-info h3 {
     flex: none;
-
   }
 
   .about-myself {
@@ -302,5 +275,11 @@ button {
   .cv-info {
     padding: 0;
   }
+  .about-myself p,
+  .code-example p,
+  .education p {
+    font-size: 14px;
+    }
+
 
 }
