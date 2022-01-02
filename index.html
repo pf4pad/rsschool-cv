@@ -69,7 +69,7 @@
               </li>
               <li>
                 <p class="language-name">Ukrainian</p>
-                <p>Intermediate</p>
+                <p>Native</p>
               </li>
             </ul>
           </section>
@@ -114,8 +114,9 @@
             <h3 class="cv-title">Courses</h3>
           </div>
           <ul>
-            <li>HTML and CSS Tutorials on w3schools</li>
-            <li>JavaScript Manual on learnjavascript.ru</li>
+            <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
+            <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+            <li>JavaScript Основы on code.mu (in progress)</li>
           </ul>
 
         </section>
@@ -124,11 +125,17 @@
             <img src="./images/code.svg" alt="Code Icon" width="30" height="30">
             <h3 class="cv-title">Code example</h3>
           </div>
+          <p>Given a string S. You have to return another string such that even-indexed and odd-indexed characters of S
+            are grouped
+            and groups are space-separated</p>
           <textarea id="textExample">
-         animate({duration: 1000, timing(timeFraction) {
-          return timeFraction;},
-        draw(progress) {elem.style.width = progress * 100 + '%';}
-          });
+        function sortMyString(S) {
+        let arr1 = []
+        let arr2 = []
+        for (let i = 0; i < S.length; i++)
+        { if (i % 2===0) { arr1[i]=S[i] } else { arr2[i]=S[i] } } 
+        return arr1.join('') + ' ' + arr2.join('')
+        }
        </textarea>
 
           <button onclick="animateText(textExample)">Click me</button>
@@ -137,7 +144,7 @@
     </div>
     <footer class="footer">
       <a class="github-link" href="https://github.com/pf4pad">
-        <img class="icon" src="./images/github.svg" alt="Github Icon" width="26" height="26">
+        <img class="icon" src="./images/github.svg" alt="Github Icon" width="30" height="30">
         <p>Visit my GitHub</p>
       </a>
       <a class="rsschool-link" href="https://rs.school/js/">

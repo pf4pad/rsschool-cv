@@ -4,7 +4,7 @@ function animateText(textArea) {
     from = 0;
 
   animate({
-    duration: 5000,
+    duration: 10000,
     timing: bounce,
     draw: function (progress) {
       let result = (to - from) * progress + from;
